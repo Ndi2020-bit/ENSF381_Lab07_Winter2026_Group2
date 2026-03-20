@@ -121,6 +121,8 @@ def main():
     soup = fetch_webpage(url)
     
     if soup:
+        print(soup.prettify())
+
         print("\n=== Data Analysis ===")
         headings_count = count_headings(soup)
         links_count = count_links(soup)
